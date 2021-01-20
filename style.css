@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@font-face {
+    font-family: Norse;
+    src: url(./fonts/Norse.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Ubuntu, monospace, sans-serif;
+    font-size: 18px;
+    color: #323031;
+}
+
+header h1 {
+    padding: 0.8em;
+    font-size: 2.2em;
+    letter-spacing: 0.1em;
+    text-align: center;
+    background-color: #177e89;
+}
+
+.odin-project {
+    font-family: Norse;
+    text-decoration: none;
+    letter-spacing: normal;
+    color: #ffc857;
+}
+
+.odin-project:hover,
+.theme-project a:hover {
+    color: #084c61;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.theme {
+    margin: 2em;
+}
+
+.theme-title {
+    color: #db3a34;
+    margin-bottom: 0.5em;
+    font-weight: 2.5em;
+    letter-spacing: 0.2em;
+}
+
+.theme ul {
+    list-style: none;
+}
+
+.theme-project {
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+    padding: 0.2em 1.2em;
+}
+
+.theme-project a {
+    text-decoration: none;
+    color: #323031;
+    target: _blank;
+}
+
+.under-contruction {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.under-contruction img {
+    width: 60%;
+}
