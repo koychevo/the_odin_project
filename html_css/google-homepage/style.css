@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v70/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+.navbar {
+    font-size: 0.8em;
+    padding: 1.5em;
+}
+
+.navbar-left,
+.navbar-right {
+    list-style: none;
+}
+
+.navbar-left {
+    float: left;
+}
+
+.navbar-right {
+    float: right;
+}
+
+.navbar-left li,
+.navbar-right li {
+    display: inline-block;
+    margin: 0 0.8em;
+}
+
+.navbar-left a,
+.navbar-right a {
+    text-decoration: none;
+    color: #000;
+    opacity: 0.9;
+}
+
+.navbar-left a:hover,
+.navbar-right a:hover {
+    text-decoration: underline;
+}
+
+.app-icon {
+    position: relative;
+    top: 0.3em;
+    color: #000;
+    opacity: 0.7;
+}
+
+.tooltip:hover .app-icon {
+    opacity: 1;
+}
+
+.toolip {
+    position: relative;
+    top: 0.3em;
+    color: #000;
+    opacity: 0.7;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    top: 4.8em;
+    right: 1em;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0.5em;
+    padding: 1em;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+a.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+
+a.signin-button {
+    background-color: #4285f4;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.6em;
+}
+
+a.signin-button:hover {
+    text-decoration: none;
+    cursor: grab;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .15);
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    line-height: 0;
+    font-size: 0;
+    clear: both;
+}
+
+main {
+    position: relative;
+}
+
+#main-search-field {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+}
+
+#main-search-field img {
+    display: inline-block;
+    width: 40%;
+}
+
+#main-search-field input[type="text"] {
+    width: 90%;
+    margin: 0.5em 0;
+    font-size: 1.5em;
+    padding: 0.4em 0 0.4em 2em;
+    border: 1px solid #dadce0;
+    border-radius: 1.8em;
+    outline: none;
+}
+
+#main-search-field input[type="text"]::after {
+    font-family: 'Material Icons';
+    content: 'search';
+}
+
+#main-search-field input[type="text"]:hover,
+#main-search-field input[type="text"]:focus,
+#main-search-field input[type="text"]:active {
+    box-shadow: 0 0 5px #dadce0;
+}
+
+#main-search-field input[type="submit"] {
+    margin: 0 0.4em;
+    padding: 0.9em;
+    outline: none;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #333;
+    font-size: 0.9em;
+}
+
+#main-search-field input[type="submit"]:hover {
+    border: 1px solid #dadce0;
+    border-radius: 0.2em;
+}
+
+#main-search-field input[type="submit"]:active {
+    border: 1px solid #4285f4;
+    border-radius: 0.2em;
+}
+
+.main-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    font-size: 1.2em;
+}
+
+.main-footer a {
+    color: #333;
+}
